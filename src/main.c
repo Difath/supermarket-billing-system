@@ -6,14 +6,14 @@
  * @file: main.c
  * @author: ist1117887 (Diogo Monteiro)
  */
-#include "structs.h"
-#include "helpers.h"
-#include "config.h"     
-#include "products.h" 
-#include "basket.h"   
-#include "invoice.h"   
-#include "revenue.h"   
-#include "remove.h"
+#include "../include/structs.h"
+#include "../include/helpers.h"
+#include "../include/config.h"     
+#include "../include/products.h" 
+#include "../include/basket.h"   
+#include "../include/invoice.h"   
+#include "../include/revenue.h"   
+#include "../include/remove.h"
 
 /** Main execution loop
  * @param argc  argument count (used for the IVA file)

@@ -3,12 +3,12 @@
  * @file:   invoice.c
  * @author: ist1117887 (Diogo Monteiro)
  */
-#include "structs.h"
-#include "helpers.h"
-#include "config.h"
-#include "products.h"
-#include "basket.h"
-#include "invoice.h"
+#include "../include/structs.h"
+#include "../include/helpers.h"
+#include "../include/config.h"
+#include "../include/products.h"
+#include "../include/basket.h"
+#include "../include/invoice.h"
 
 /* internal function prototypes */
 int is_valid_name(char name[]);

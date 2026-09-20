@@ -3,11 +3,11 @@
  * @file: revenue.c
  * @author: ist1117887 (Diogo Monteiro)
  */
-#include "structs.h"
-#include "helpers.h"
-#include "config.h"
-#include "products.h"
-#include "revenue.h"
+#include "../include/structs.h"
+#include "../include/helpers.h"
+#include "../include/config.h"
+#include "../include/products.h"
+#include "../include/revenue.h"
 
 /** Validate if a product's revenue can be printed
  * @param sys   global system state

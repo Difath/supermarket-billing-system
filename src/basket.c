@@ -4,11 +4,11 @@
  * @author: ist1117887 (Diogo Monteiro)
  */
 
-#include "structs.h"
-#include "helpers.h"
-#include "config.h"
-#include "products.h"
-#include "basket.h"
+#include "../include/structs.h"
+#include "../include/helpers.h"
+#include "../include/config.h"
+#include "../include/products.h"
+#include "../include/basket.h"
 
 /* internal function prototypes */
 BasketNode* find_basket_item(Sys *sys, Product *product);

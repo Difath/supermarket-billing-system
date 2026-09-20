@@ -3,11 +3,11 @@
  * @file: products.c
  * @author: ist1117887 (Diogo Monteiro)
  */
-#include "structs.h"
-#include "helpers.h"
-#include "config.h"
-#include "products.h"
-#include "basket.h"
+#include "../include/structs.h"
+#include "../include/helpers.h"
+#include "../include/config.h"
+#include "../include/products.h"
+#include "../include/basket.h"
 
 /** Compare two EAN strings alphabetically
  * @param ean1  first EAN
@@ -363,33 +363,3 @@ void cmd_list_products(Sys *sys, char buffer[BUFMAX]){
     }
 }
 
-#include <stdlib.h>
-#include <string.h>
-ListaLivro *insere(ListaLivro *lst, int preco, char titulo[]){
-    ListaLivro *previous = NULL;
-    ListaLivro *head_lista = lst;
-    ListaLivro *aux = (*ListaLivro)malloc(sizeof(ListaLivro));
-    aux->preco = preco;
-    aux->titulo = strdup(titulo);
-    aux->proximo = NULL;
-    if (head_lista == NULL){
-        head_lista = aux;
-        return head_lista;
-    }
-    while (lst != NULL){
-        if (preco < lst->preco){
-            if (previous == NULL){
-                head_lista = aux;
-                aux->proximo = lst;
-                return head_lista;
-            }
-            previous->proximo = aux;
-            aux->proximo = lst;
-            return head_lista;
-        }
-        previous=lst;
-        lst = lst->proximo;
-    }
-    previous->proximo = aux;
-    return head_lista;
-}
